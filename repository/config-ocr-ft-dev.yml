@@ -21,3 +21,4 @@ eureka:
       defaultZone: http://desktop-h4ms7er:8761/eureka/
 
 temp-dir: ./temp/
+test: nice
