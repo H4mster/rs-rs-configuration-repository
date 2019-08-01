@@ -22,7 +22,7 @@ eureka:
 
 spring:
   application:
-    name: ocr-ft-consumer
+    name: consumer-ft
 
 feign:
   hystrix:
