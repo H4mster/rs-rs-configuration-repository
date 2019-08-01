@@ -20,7 +20,7 @@ zuul:
   routes:
     ocr_ft:
       path: /api/ocr_ft/**
-      serviceId: ocr-ft-consumer
+      serviceId: consumer-ft
   host:
     connect-timeout-millis: 3000
     socket-timeout-millis: 3000
