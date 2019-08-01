@@ -1,0 +1,19 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://desktop-h4ms7er:8761/eureka/
+
+server:
+  tomcat:
+    uri-encoding: UTF-8
+  port: 8762
+#   servlet:
+#     context-path: /${spring.application.name}
+
+spring:
+  application:
+    name: ngineureka
+  thymeleaf:
+    prefix: classpath:/static/
+    suffix: .html
+    # http://127.0.0.1:8888/ngineureka/cmd/reload

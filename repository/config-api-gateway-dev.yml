@@ -1,0 +1,26 @@
+server:
+  port: 8800
+  max-http-header-size: 10MB
+#  servlet:
+#    context-path: /${spring.application.name}
+
+spring:
+  application:
+    name: api-gateway
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://desktop-h4ms7er:8761/eureka/
+zuul:
+  routes:
+    ocr_ft:
+      path: /api/ocr_ft/**
+      serviceId: ocr-ft-consumer
+  host:
+    connect-timeout-millis: 3000
+    socket-timeout-millis: 3000

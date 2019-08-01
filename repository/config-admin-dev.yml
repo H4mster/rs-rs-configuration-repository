@@ -1,0 +1,21 @@
+server:
+  port: 8763
+  max-http-header-size: 10MB
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://desktop-h4ms7er:8761/eureka/
+
+spring:
+  application:
+    name: admin
+
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: "*" # health,info
