@@ -1,5 +1,5 @@
 server:
-  port: 8090
+  port: 8900
   max-http-header-size: 10MB
 
 spring:
