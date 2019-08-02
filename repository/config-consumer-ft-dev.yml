@@ -23,6 +23,11 @@ eureka:
 spring:
   application:
     name: consumer-ft
+  rabbitmq:
+    host: 47.106.252.41
+    port: 5672
+    username: rabbit
+    password: 123456
 
 feign:
   hystrix:
