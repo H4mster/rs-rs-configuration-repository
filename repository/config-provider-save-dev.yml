@@ -1,0 +1,26 @@
+server:
+  port: 8920
+  max-http-header-size: 10MB
+#  servlet:
+#    context-path: /${spring.application.name}
+
+spring:
+  application:
+    name: ocr-save
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+  rabbitmq:
+    host: 47.106.252.41
+    port: 5672
+    username: rabbit
+    password: 123456
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://desktop-h4ms7er:8761/eureka/
+
+temp-dir: D:/temp/
+save-dir: D:/home/capture/
