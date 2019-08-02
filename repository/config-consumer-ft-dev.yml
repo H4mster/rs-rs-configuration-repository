@@ -17,8 +17,6 @@ eureka:
   client:
     service-url:
       defaultZone: http://desktop-h4ms7er:8761/eureka/
-  instance:
-    prefer-ip-address: true
 
 spring:
   application:
