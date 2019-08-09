@@ -1,5 +1,5 @@
 server:
-  port: 8911
+  port: 8910
   max-http-header-size: 10MB
 #  servlet:
 #    context-path: /${spring.application.name}
