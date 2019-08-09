@@ -18,7 +18,7 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://desktop-h4ms7er:8761/eureka/
+      defaultZone: http://47.106.252.41:8761/eureka/
 
 capacity: 4
 
