@@ -14,10 +14,11 @@ spring:
     multipart:
       max-file-size: 10MB
       max-request-size: 10MB
-      
+
 eureka:
   client:
     service-url:
       defaultZone: http://desktop-h4ms7er:8761/eureka/
 
 temp-dir: ./temp/
+capacity: 8
