@@ -27,3 +27,7 @@ spring:
 feign:
   hystrix:
     enabled: false
+
+ribbon:
+  ReadTimeout: 10000
+  ConnectTime: 10000
