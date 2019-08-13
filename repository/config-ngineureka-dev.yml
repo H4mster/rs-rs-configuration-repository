@@ -1,7 +1,7 @@
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://desktop-h4ms7er:8761/eureka/
+      defaultZone: http://47.106.252.41:8761/eureka/ # http://desktop-h4ms7er:8761/eureka/
 
 server:
   tomcat:

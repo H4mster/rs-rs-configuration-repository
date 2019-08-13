@@ -29,5 +29,5 @@ feign:
     enabled: false
 
 ribbon:
-  ReadTimeout: 10000
-  ConnectTime: 10000
+  ReadTimeout: 5000
+  ConnectTime: 5000
