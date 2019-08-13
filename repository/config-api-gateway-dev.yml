@@ -1,8 +1,6 @@
 server:
   port: 8800
   max-http-header-size: 10MB
-#  servlet:
-#    context-path: /${spring.application.name}
 
 spring:
   application:
@@ -15,11 +13,11 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://desktop-h4ms7er:8761/eureka/
+      defaultZone: http://47.106.252.41:8761/eureka/
 zuul:
   routes:
-    ocr_ft:
-      path: /api/ocr_ft/**
+    ocrft:
+      path: /ocrft/**
       serviceId: consumer-ft
   host:
     connect-timeout-millis: 3000
