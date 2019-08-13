@@ -22,3 +22,18 @@ zuul:
   host:
     connect-timeout-millis: 3000
     socket-timeout-millis: 3000
+
+ribbon:
+  ConnectTimeout: 500 #连接超时
+  ReadTimeout: 5000 #通信超时时间
+  OkToRetryOnAllOperations: true #是否对所有操作重试
+  MaxAutoRetriesNextServer: 2 #同一服务不同实例的重试次数
+  MaxAutoRetries: 1 #同一实例的重试次数
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 5000 #熔断超时时长
