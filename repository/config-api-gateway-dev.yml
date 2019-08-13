@@ -17,7 +17,7 @@ eureka:
 zuul:
   routes:
     ocrft:
-      path: /ocrft/**
+      path: /api/**
       serviceId: consumer-ft
   host:
     connect-timeout-millis: 3000
